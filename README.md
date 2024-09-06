@@ -1,1 +1,1 @@
-# receipt-management
+# michael-receipt-management
