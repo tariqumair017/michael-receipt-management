@@ -46,6 +46,7 @@ function handleSubmit(event) {
  
 }
 
+
 function showSuccessCheck(receipt) {   
   document.getElementById("receipt-form").style.display = "none";
   document.getElementsByClassName("message-info")[0].innerText = `Invoice ${receipt.receipt_id} Updated!`;
