@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /> 
+    
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    
+
+  <link rel="stylesheet" href="./css/style.css" />  
+  <title>Receipt Scanner</title>
+</head>
+
+<body>
+  <div class="container">
+    <div id="loading" style="display: none">
+        <div class="spinner-border" role="status"></div>
+    </div>
+    <div id="toast">
+        <div id="img">
+          <i class="fa-solid fa-circle-check" style="color: #63e6be"></i>
+        </div>
+        <div id="desc">A notification message..</div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #d6e8f3 !important">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-4" href="#"><b>Employee Center</b></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-primary"
+                aria-current="page"
+                href="#"
+                >Invoices</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Resources</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Payroll</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contacts</a
+              >
+            </li>
+            <li class="nav-item border border-2 rounded-2 bg-white">
+              <a class="nav-link" aria-current="page" href="#">Hi Admin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="m-4">
+      <!-- <h2 class="h2-class m-2">Invoice Management</h2> -->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card"  onclick="location.href='/upload'">
+            <div class="card-body text-center">
+              <i class="fa fa-upload fa-2x mb-3"></i>
+              <h5 class="card-title"><b>Upload New Invoice</b></h5>
+            </div>  
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <i class="fa fa-file-alt fa-2x mb-3"></i>
+              <h5 class="card-title"><b>View Invoices</b></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+  
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+  
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+  <script src="https://fengyuanchen.github.io/cropperjs/js/cropper.js"></script>
+  <script src="http://t4t5.github.io/sweetalert/dist/sweetalert-dev.js"></script>
+ 
+</body>
+
+</html>
